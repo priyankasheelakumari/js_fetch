@@ -1,0 +1,47 @@
+.header{
+    border:5px;
+    background-color: #c00606;
+    height: 70px;
+}
+.header a{
+    color: white;
+    padding-top: 20px;
+}
+.morebtn{
+    color: white;
+}
+.dropdown{
+    padding-top: 12px;
+
+}
+.sign{
+    border-radius: 20%;
+    color: rgb(178, 8, 8);
+    
+    
+}
+ .sign a:hover{
+    background-color: #6e6a6a;
+ }
+.main_font{
+    font-family: 'Jim Nightshade';
+    font-size: 30px;
+    padding-left: 250px;
+    padding-right: 400px;
+}
+.bag{
+    color: rgb(13, 11, 11);
+    padding-left: 10px;
+}
+.container{
+    margin-top: 100px;
+}
+.centerline{
+    font-size: 60px;
+}
+#center1{
+    display: inline;
+}
+.cookie{
+    font-size: 40px;
+}
