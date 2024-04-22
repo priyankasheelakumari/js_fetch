@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple-calculator</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const OPERATION=prompt("enter the operator using sign +,-,*,/:");
+        const NUM1=parseFloat(prompt("enter the first no:"));
+        const NUM2=parseFloat(prompt("enter the second no:"));
+
+        let result;
+
+        if(OPERATION=='+'){
+            result= NUM1+NUM2;
+        }else if(OPERATION=='-'){
+            result= NUM1-NUM2;
+        }else if(OPERATION=='*'){
+            result= NUM1*NUM2
+        }else
+        result= NUM1/NUM2;
+
+        document.getElementById("demo").innerHTML="the answer is " + result;
+        //or
+        console.log(`${NUM1} ${OPERATION} ${NUM2}=${result}`);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="test"></p>
+        <script>
+          /* let ans="hello world!";
+           document.getElementById("demo").innerHTML=ans;
+           let details={"name":"priyanka","age":32,"place":"toronto"}
+           document.getElementById("test").innerHTML="my name is " + details.name;*/
+
+           //this
+
+           const person={
+            firstname:"priyanka",
+            secondname:"sheelakumari",
+            car:"mazda",
+            fullname : function(){
+               return this.firstname + " "+this.secondname
+
+            }
+
+           };
+           document.getElementById("demo").innerHTML=person.fullname();
+          //ARROW FUNCTION
+           let myFunction=(a,b) =>a*b;
+            document.getElementById("demo").innerHTML = myFunction(5, 5);   
+            
+            //is equal to
+            function myFunction(a,b){
+                return a*b;
+
+            }
+            document.getElementById("demo").innerHTML = myFunction(5, 5);  
+            
+            let hello = "";//other example
+
+                hello = () => {
+                return "Hello World!";
+            }
+
+            //
+            for( let i=0;i<5;i++){
+                setTimeOUT(function(){
+                    console.log(i)
+                },i*1000);
+            }
+
+
+
+        </script>
+   
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var myString="priyanka";
+        myLine="my name is " + myString + " sheelakumari";
+        console.log(myLine)
+        console.log(myString)
+
+        //function
+        function test(){
+            console.log("hey, world")
+
+        }
+        test();
+
+        //if statement
+        function trueorfalse(isIt){
+            if (isIt){
+                return "its True";
+            }
+            return "its False"
+
+        }
+        console.log(trueorfalse(true))*/
+
+
+        //elsif satement
+        /*function passaValue(num){
+            var ans=""
+            if (num==1){
+                ans="one"
+            }else if(num==2){
+
+                ans="two"
+            }else if(num==3){
+                ans="three"
+            }else {
+                ans="not defined"
+            }
+            return ans
+            
+        }
+        console.log(passaValue(5))*/
+
+        //objects
+         
+      /*  var details ={
+            "name":"prayag",
+            "address":"25 Parkway Forest Dr",
+            "father's name": "Sreerag",    
+            "mother's name" : "Priyanka" ,
+            "friend's name" :["Aviratt","kenan","zedan"] ,
+            4:"fav number"  ,
+            "nickname" : "makki"    
+         };
+
+         var studentName= details.name;
+         console.log(studentName)
+
+         var studentAddress = details["address"]
+         console.log(studentAddress)
+
+         var nuM =4;
+         var numBer=details[nuM];
+         console.log(numBer)
+
+         details.nickname= "purple makki"
+         console.log(details.nickname)
+         x=details.nickname
+         console.log(x)
+
+         //adding properties
+         details.cartoon="paw patrol" // using dot notation
+         console.log(details)
+         details['favcolor']="purple"  //using bracket
+        var favcLr =details.favcolor
+        console.log(favcLr) // OR
+        console.log(details.favcolor)
+
+        //delete a property
+
+        delete details.nickname;
+        console.log(details)
+
+        // objects inside function
+        function checkstudent(val){
+            result="";
+            var details ={
+            "name":"prayag",
+            "address":"25 Parkway Forest Dr",
+            "father's name": "Sreerag",    
+            "mother's name" : "Priyanka" ,
+            "friend's name" :["Aviratt","kenan","zedan"] ,
+            4:"fav number"  ,
+            "nickname" : "makki"    
+         };
+         result = details[val];
+         return result;
+        }
+        console.log(checkstudent("name"))
+
+        //checking property
+
+        var details ={
+            "name":"prayag",
+            "address":"25 Parkway Forest Dr",
+            "father's name": "Sreerag",    
+            "mother's name" : "Priyanka" ,
+            "friend's name" :["Aviratt","kenan","zedan"] ,
+            4:"fav number"  ,
+            "nickname" : "makki"    
+         };
+
+         function checK(checkPro){
+            if (details.hasOwnProperty(checkPro)){
+                return details[checkPro];
+                }
+                else{
+                    return "not found"
+                }
+            }
+         
+         console.log(checK("name"))
+         console.log(checK("match"))
+        
+         // object arrays
+           var items=[
+            {
+            "type":"food",
+            "list":["milk","bread","egg"]
+            },
+            {
+            "type":"fruits",
+            "list":["apple","banana","kiwi"]
+            }
+        ];
+      var result=items[0].list[1];
+        console.log(result)
+
+        //for loop
+        var myArray=[];
+        for(i=0;i<=5;i++)
+        {
+            myArray.push(i);
+        }
+        console.log(myArray)
+
+        //while loop
+         var arraY=[];
+         i=0;
+         while(i<10){
+            arraY.push(i);
+            i++;
+         }
+         console.log(arraY)
+
+         //
+         var ourArray=[21,25,27,30,35];
+         var ourArraytotal=0;
+         for(i=0;i<ourArray.length;i++){
+            ourArraytotal +=ourArray[i]
+
+         }
+         console.log(ourArraytotal)
+
+         //do while
+
+         var arr=[];
+         i=10;
+         do{
+            arr.push(i);
+            i++;
+         }while(i<15);
+
+         console.log(i,arr)
+
+         //profile lookup
+         contacts=[
+            {
+                "fname":"priya",
+                "age":31,
+                "city":"toronto"
+            },
+            {
+                "fname":"kannan",
+                "age":32,
+                "city":"chennai"
+
+            },
+            {
+                "fname":"athi",
+                "age":4,
+                "city":"tvm"
+            }
+
+         ];
+         function lookUp(name,pro){
+            for(var i=0;i<contacts.length;i++){
+                if(contacts[i].fname===name){
+                    return contacts[i][pro] || "no such property"
+                }
+            }
+                return "not defined"
+            
+         }
+         var result=lookUp("kannan","age")
+         console.log(result)
+//
+           function wholeNum(){
+            
+            return Math.floor(Math.randum() * 10);
+
+           }
+            console.log(wholeNum());   //doubt
+            
+            //convert a string to num using parseint
+            function conVertToint(str){
+                return parseInt(str);
+                
+            }
+            conVertToint("56");
+            console.log(conVertToint("priya"))  //console result is nan means not a number
+            console.log(conVertToint("32"))  //console result is 32
+
+
+            //ternary operetor
+
+            function checKsign(num){
+                return num>0 ? "positive" : num<0 ? "negative": "zero"
+            }
+
+            var ans=checKsign(0);
+            console.log(ans)
+
+ 
+Write a function named greet that gets a name as input and prints Hello, name 
+.Write a function named sum that gets a number n and returns the sum of the numbers from 1 to n.
+Write a function named reverse that gets a string as input and returns the string reversed.
+Write a function named capitalize that gets a string (only lower case) and capitalizes it.
+
+For example,
+
+    this is an example  ->  This Is An Example
+    Write a function named remove that gets a string and an integer and returns the string without a letter in the index corresponding to the integer.
+    Write a function named mulWord that gets a string s and an integer n and returns the string n times with space between each.
+    Create a function named fibo that gets an integer i and returns the ith fibonacci series number.
+
+The fibonacci series starts from 0 and 1 and each time the ith element equals the sum of the i-1th and i-2th elements.
+
+So,
+
+    0th - 0
+    1th - 1
+    2th - 1 = 0 + 1
+    3th - 2 = 1 + 1
+    4th - 3 = 1 + 2
+    5th - 5 = 2 + 3
+    6th - 8 = 3 + 5
+    7th - 13 = 5 + 8
+    ....
+
+    Write a function named isPrime that gets an integer num and returns true if num is a prime number otherwise false.
+    Write a function named fact that gets num and returns the factorial of num.
+
+Examples,
+
+    Factorial of 6 (6!)  ->  1 * 2 * 3 * 4 * 5 * 6 = 720
+    Factorial of 3 (3!)  ->  1 * 2 * 3 = 6
+    A palindrome number is a number that is the same from left to right or right to left.
+
+Examples: 12321, 5, 676.
+
+Write a function named isPalindrome that gets an integer and returns true if the integer is a palindrome otherwise false.
+
+Write a function named min that gets an array of integers and returns the minimum number.*/
+</script>
+</body>
+</html> 

@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"Arun",
+        "place":"TN",
+        "class":5
+    },
+    {
+        "id":2,
+        "name":"Anju",
+        "place":"MP",
+        "class":6
+    },
+    {
+        "id":3,
+        "name":"Binu",
+        "place":"KL",
+        "class":5
+    },
+    {
+        "id":4,
+        "name":"cathy",
+        "place":"TN",
+        "class":7
+    },
+    {
+        "id":5,
+        "name":"Rani",
+        "place":"KL",
+        "class":5
+    }
+
+]

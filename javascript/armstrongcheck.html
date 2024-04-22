@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const NUM=prompt("enter the no:");
+        let sum=0;
+        let temp=NUM;
+        while(temp>0){
+            remainder=temp%10;
+            sum += remainder*remainder*remainder;
+            temp=parseInt(temp/10);
+
+        }
+        if(sum==NUM){
+            console.log(`$NUM "Number is armstrong"`)
+
+        }else{
+            console.log(`$NUM "Number is  not armstrong"`)
+
+        }
+        function max(n1, n2) {
+    // Write code here
+    if(n1>n2){
+        return n1;
+    }else{
+        return n2;
+    }
+}
+console.log(max(1,2))
+function sQuare(num){
+    return num*num;
+}
+function displaySquare(val){
+    console.log("the square is "+ val(15));
+
+}
+displaySquare(sQuare);
+    </script>
+</body>
+</html>
