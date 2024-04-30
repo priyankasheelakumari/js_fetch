@@ -27,7 +27,21 @@
 
                         
                     </table>
-                    <script src="studentdetails.js"></script>
+                    <script>
+                        fetch("studentdetails.json")
+                        .then(response => response.json())
+                        .then(res =>{
+                            const data =res.details;
+                            let rows='';
+                            data.forEach(product =>{
+                                rows += ` <tr><td>${details.id}</td>
+                                                <td>${details.name}</td>
+                                                <td>${details.place}</td>
+                                                <td>${details.class}</td></tr>`
+                                                                })
+                            document.getElementById("data-output").innerHTML=rows;
+                                                })
+                    </script>
 
             </div>
 
